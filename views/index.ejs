@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Verse</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>😂 Joke Verse</h1>
+        <% if (joke) { %>
+            <div class="joke-card">
+                <p id="joke"><%= joke %></p>
+            </div>
+            <% } else { %>
+                <div class="joke-card">
+                    <p id="joke">Click the button to get a joke 😎</p>
+                </div>
+                <% } %>
+                <form action="/joke" method="POST">
+                    <button type="submit">Tell Me Another</button>
+                </form>
+    </div>
+    <footer>
+        <p>Made with 😂 by Kapil</p>
+        <p class="credit">Powered by JokeAPI</p>
+    </footer>
+</body>
+
+</html>
