@@ -6,6 +6,7 @@ const port = 3000;
 
 app.use(express.static("public"));
 
+//Returns HomePage on request
 app.get("/",async (req,res)=>{
     try {
         res.render("index.ejs",{joke: null});
@@ -14,6 +15,7 @@ app.get("/",async (req,res)=>{
     }
 });
 
+//Fetches the JOKE API for a random Joke and render it in /joke route
 app.post("/joke",async (req,res)=>{
     try {
         const result = await axios.get("https://v2.jokeapi.dev/joke/Any?type=single");
