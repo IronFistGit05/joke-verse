@@ -8,7 +8,7 @@ Check Mater Node for Project Files
 
 ## 🚀 Live Demo
 
-🌐 [[https://joke-verse.onrender.com/joke](https://joke-verse.onrender.com/joke)](https://joke-verse.onrender.com/)
+🌐 https://joke-verse.onrender.com/
 
 ---
 
